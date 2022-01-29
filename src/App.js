@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import Rectangle from "./components/Rectangle";
+import Block from "./components/Block";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+        <Rectangle />
+        <Rectangle />
+        <Rectangle />
+
+        <Block borderColor={"purple"} backColor={"yellow"} clickable={false} />
+        <Block borderColor={"blue"} backColor={"red"} clickable={true} />
+
+        <Block borderColor={"green"} backColor={"pink"} clickable={false} />
+        <Block borderColor={"blue"} backColor={"red"} clickable={true} />
+
+        <Block borderColor={"red"} backColor={"gray"} clickable={false} />
+        <Block borderColor={"blue"} backColor={"red"} clickable={true} />
     </div>
   );
 }
